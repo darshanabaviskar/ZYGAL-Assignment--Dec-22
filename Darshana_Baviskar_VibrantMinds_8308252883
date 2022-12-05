@@ -1,0 +1,81 @@
+<html>
+<head>
+<style>
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.m_main-section {
+    height: 500px;
+    width: 800px;
+}
+.m_main-section .m_row {
+    width: 100%;
+    height: calc(100%/3);
+    display: flex;
+}
+#m_block1 {
+    background: red;
+}
+.m_block {
+    height: 100%;
+    width: 200px;
+    display: flex;
+}
+.m_block p {
+    font-size: 20px;
+    color: black;
+}
+#m_block2 {
+    background: yellow;
+}
+.m_main-section .m_row {
+    width: 100%;
+    height: calc(100%/3);
+    display: flex;
+}
+.m_btn {
+    padding: 10px;
+}
+#m_block4 {
+    background: orange;
+}
+#m_block3 {
+    background: green;
+}
+</style>
+</head>
+<body>
+<div class="m_main-section">
+		
+    <div class="m_row">
+        <div id="m_block1" class="m_block">
+            <p>1</p>
+        </div>
+        <div id="m_block2" class="m_block">
+            <p>2</p>
+        </div>
+    </div>
+
+    <div class="m_row m_center">
+        <button onClick="printMove()" class="m_btn">
+            Anti-Clockwise
+        </button>
+        <button class="m_btn">
+            Clockwise
+        </button>
+    </div>
+
+    <div class="m_row">
+        <div id="m_block4" class="m_block">
+            <p>4</p>
+        </div>
+        <div id="m_block3" class="m_block">
+            <p>3</p>
+        </div>
+    </div>
+
+</div>
+</body>
+</html>
